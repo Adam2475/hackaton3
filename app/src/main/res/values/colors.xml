@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="fblue">#3b5998</color>
+    <color name="beige">#F5F5DC</color>
+    <color name="space">#1F282D</color>
+    <color name="space1">#006ee6</color>
+    <color name="space2">#003166</color>
+    <color name="space3">#000c19</color>
+    <color name="space4">#001833</color>
+</resources>
