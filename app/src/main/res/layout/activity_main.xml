@@ -8,7 +8,8 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:backgroundTint="@color/space3"
     android:backgroundTintMode="multiply"
-    android:id="@+id/main">
+    android:id="@+id/main"
+    android:orientation="vertical">
 
     <TextView
         android:layout_width="match_parent"
@@ -19,4 +20,12 @@
         android:layout_gravity="center_horizontal"
         android:textAlignment="center">
     </TextView>
+
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="197dp"
+        android:layout_margin="15dp">
+    </WebView>
+
 </LinearLayout>
