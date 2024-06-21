@@ -2,6 +2,7 @@ package com.example.anotheraudioapp
 
 import android.os.Bundle
 import android.webkit.WebChromeClient
+import android.webkit.WebSettings
 import android.webkit.WebView
 import android.webkit.WebViewClient
 import androidx.activity.enableEdgeToEdge
@@ -11,7 +12,9 @@ import androidx.core.view.WindowInsetsCompat
 
 class MainActivity : AppCompatActivity() {
 
+    // Casting WebView in main activity
     private lateinit var webView: WebView
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -21,11 +24,18 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        webView = findViewById(R.id.webview)
+
+        // Assign the view to the new variable
+        webView = findViewById<WebView>(R.id.webview)
+        webView.settings.builtInZoomControls = true;
+        // Enabling javascript
         webView.settings.javaScriptEnabled = true
+        // Adding WebView functionality
         webView.webViewClient = WebViewClient()
         webView.webChromeClient = WebChromeClient()
+
+
         // Load the HTML file from assets
-        webView.loadUrl("app/src/main/res/raw/index.html")
+        webView.loadUrl("file:///android_asset/{index.html}")
     }
 }

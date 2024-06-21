@@ -14,15 +14,15 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Another Audio App"
-        android:textSize="42dp"
+        android:text="@string/app_name"
+        android:textSize="42sp"
         android:textColor="@color/beige"
         android:layout_gravity="center_horizontal"
         android:textAlignment="center">
     </TextView>
 
     <WebView
-        android:id="@+id/webview"
+        android:id="@+id/webView"
         android:layout_width="match_parent"
         android:layout_height="197dp"
         android:layout_margin="15dp">

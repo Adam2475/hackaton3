@@ -1,6 +1,8 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
+    //kotlin("jvm") version "1.7.21"
+    //kotlin("plugin.serialization") version "1.7.21"
 }
 
 android {
